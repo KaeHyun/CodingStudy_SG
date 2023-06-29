@@ -10,7 +10,6 @@ output
 '''
 n = int(input())
 data = list(input().split())
-d = dict()
 start = [1,1]
 dx = [0,0,-1,1] # L R U D
 dy = [-1,1,0,0]
