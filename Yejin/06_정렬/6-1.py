@@ -1,11 +1,10 @@
 # 선택정렬
 array = [7, 5, 9, 0, 3, 1, 6, 2, 4, 8]
 
-for i in range(len(array)):
-    min_index = i
-    for j in range(i+1, len(array)):
-        if array[min_index] > array[j]:
-            min_index = j
-    array[min_index], array[i] = array[i], array[min_index]
+for i in range(len(array)-1):
+    minimum = min(array[i+1:])
+    idx = array.index(minimum)
+    if array[i] > minimum:
+        array[i], array[idx] = array[idx], array[i]
 
 print(array)
