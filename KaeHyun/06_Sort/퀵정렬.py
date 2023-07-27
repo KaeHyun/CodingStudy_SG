@@ -19,4 +19,3 @@ def qsort(array):
 
 
 print(qsort(array))
-
