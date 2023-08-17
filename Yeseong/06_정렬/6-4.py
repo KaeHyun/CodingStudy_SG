@@ -22,3 +22,17 @@ def quick_sort(array, start, end):
 
 quick_sort(array, 0, len(array) - 1)
 print(array)
+
+
+## python의 장점을 살린 quick sort 코드 ##
+# def quick_sort(array):
+#     if len(array) <= 1:
+#         return array
+    
+#     p = array[0]
+#     tail = array[1:]
+    
+#     left_side = [x for x in tail if x <= p]
+#     right_side = [x for x in tail if x > p]
+    
+#     return quick_sort(left_side) + [p] + quick_sort(right_side)
