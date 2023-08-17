@@ -21,3 +21,15 @@ if result is None:
     print("원소 {}을(를) 찾을 수 없습니다.".format(target))
 else:
     print("원소 {}은(는) {}번 째 위치에 있습니다.".format(target, result))
+    
+## 반복문을 이용한 binary search 구현 ##
+# def binary_search(array, target, start, end):
+#     while start <= end:
+#         mid = (start + end) // 2
+#         if array[mid] == target:
+#             return mid + 1
+#         elif array[mid] > target:
+#             end = mid - 1
+#         else:
+#             start = mid + 1
+#     return None
