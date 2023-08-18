@@ -24,3 +24,4 @@ for i in graph[0]:
         maximum = max(maximum, i)
 
 print(f'{graph[0].index(maximum)+1} {maximum} {graph[0].count(maximum)}')
+
