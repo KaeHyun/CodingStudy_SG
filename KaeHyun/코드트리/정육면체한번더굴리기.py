@@ -1,4 +1,4 @@
-# 2021 하반기 오전 1번 문제 (골드3)
+# 2021 하반기 오전 1번 문제 (골드3) -- simulation
 import sys
 from collections import deque
 
@@ -87,8 +87,6 @@ def move_dice(x, y, dice, dir):
             dice[0] = dice[2]
             dice[2] = 7 - tmp_up
         return nx, ny, dice, dir   
-
-
 
 def make_score(x, y, grid_map): # BFS?
     visit_map= [[0]*n for _ in range(n)]
